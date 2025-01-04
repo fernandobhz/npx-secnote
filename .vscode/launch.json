@@ -1,0 +1,32 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "encrypt",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/index.mjs",
+      "args": ["xpto.txt", "1234"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "decrypt",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/index.mjs",
+      "args": ["xpto.txt.secnote", "1234"]
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "decrypt legacy secnote-frg.secnote.secnote",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/index.mjs",
+      "args": ["xpto.web-secnote-frg.txt.secnote", "1234"]
+    }
+  ]
+}
